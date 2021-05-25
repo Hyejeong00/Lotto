@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnConstellation = findViewById<CardView>(R.id.btnConstellation)
         val btnName = findViewById<CardView>(R.id.btnName)
+        val btnRandom = findViewById<CardView>(R.id.btnRandom)
 
         btnConstellation.setOnClickListener {
             startActivity(Intent(this@MainActivity, ConstellationActivity::class.java))
@@ -20,6 +21,10 @@ class MainActivity : AppCompatActivity() {
 
         btnName.setOnClickListener {
             startActivity(Intent(this@MainActivity, NameActivity::class.java))
+        }
+
+        btnRandom.setOnClickListener {
+            startActivity(Intent(this@MainActivity, ResultActivity::class.java))
         }
     }
 }
