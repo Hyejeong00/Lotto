@@ -17,14 +17,14 @@ fun getRandomLottoNumbers(): MutableList<Int>{
 
         while(true) {
             var number: Int = getRandomLottoNumber()
-          var flag_existing: Int = 0
+//          var flag_existing: Int = 0
             if(lottoNumbers.contains(number)) {
-              flag_existing = 1
+//              flag_existing = 1
               continue
             }
-            if (flag_existing.equals(1))
-              continue
-            else
+//            if (flag_existing.equals(1))
+//              continue
+//            else
             lottoNumbers.add(number)
             if(lottoNumbers.size >= 6)
                 break
