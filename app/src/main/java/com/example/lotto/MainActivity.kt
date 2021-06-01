@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.cardview.widget.CardView
+import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -15,22 +16,23 @@ fun getRandomLottoNumber (): Int{
 fun getRandomLottoNumbers(): MutableList<Int>{
     val lottoNumbers = mutableListOf<Int>()
 
-        while(true) {
-            var number: Int = getRandomLottoNumber()
-//          var flag_existing: Int = 0
-            if(lottoNumbers.contains(number)) {
-//              flag_existing = 1
+    while(true) {
+        var number: Int = getRandomLottoNumber()
+//      var flag_existing: Int = 0
+        if(lottoNumbers.contains(number)) {
+//            flag_existing = 1
               continue
-            }
-//            if (flag_existing.equals(1))
-//              continue
-//            else
-            lottoNumbers.add(number)
-            if(lottoNumbers.size >= 6)
-                break
-            }
-            return lottoNumbers
         }
+//      if (flag_existing.equals(1))
+//            continue
+//       else
+         lottoNumbers.add(number)
+         if(lottoNumbers.size >= 6)
+             break
+    }
+    return lottoNumbers
+}
+
 fun getShuffledLottoNumbers () : MutableList<Int>{
     val list = mutableListOf<Int>()
 
